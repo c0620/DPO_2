@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "NauryzRedKeds";
+  src: url(./assets/fonts/NauryzRedKeds.ttf);
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url(./assets/fonts/Involve-SemiBold.ttf);
+}
+
+:root {
+  --family-primary: "NauryzRedKeds", sans-serif;
+  /* Основной текст */
+  --family-secondary: "Involve", sans-serif;
+  --bs-primary: #9c27b0;
+  --bs-primary-rgb: 156, 39, 176;
+  /* обязательно в формате r,g,b */
+  --bs-primary-bg-subtle: #f3e5f5;
+  --bs-primary-border-subtle: #ce93d8;
+  --bs-primary-text-emphasis: #6a1b9a;
+}
+
+.is-width-m {
+  max-width: 600px;
+}
+
+.is-width-s {
+  max-width: 300px;
+}
+
+/* БАЗА */
+
+body {
+  font-family: var(--family-secondary);
+}
+
+/* Заголовки */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--family-primary);
+  color: var(--brand-text);
+}
+
+h1.title {
+  font-size: 4.5rem;
+}
+
+body,
+.title,
+.subtitle,
+.label,
+.content {
+  color: var(--brand-text);
+}
