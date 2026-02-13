@@ -2,31 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Корзина</title>
+    <title>Корзина — МЕРИЛАБ</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">МЕРИЛАБ</a>
+        <a class="navbar-brand" href="../../index.html">МЕРИЛАБ</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navAbout"
+          data-bs-target="#navCart"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navAbout">
+        <div class="collapse navbar-collapse" id="navCart">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link" href="../../index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">О нас</a>
@@ -41,44 +45,165 @@
         </div>
       </div>
     </nav>
+    <main class="flex-fill">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="display-5 text-center mb-5">Ваша корзина</h1>
 
-    <section class="py-5">
+          <ul class="list-group mb-5">
+            <li
+              class="list-group-item d-flex align-items-center border-4 border-dark rounded-5 mb-3"
+            >
+              <div class="me-4" style="width: 80px; flex-shrink: 0">
+                <img
+                  src="../assets/img/reineca.png"
+                  alt="Альтернантера Рейнека"
+                  class="img-fluid rounded-3"
+                />
+              </div>
+
+              <div class="flex-grow-1">
+                <h5 class="mb-1 fs-4">Альтернантера Рейнека</h5>
+                <p class="text-secondary fw-bolder">800₽ × 1</p>
+              </div>
+
+              <div class="d-flex gap-4">
+                <div class="btn-group border border-4 border-dark">
+                  <button class="btn text-warning fw-bold">−</button>
+                  <button class="btn text-secondary fw-bold">+</button>
+                </div>
+                <button class="btn btn-danger">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </li>
+
+            <li
+              class="list-group-item d-flex align-items-center border-4 border-dark rounded-5"
+            >
+              <div class="me-4" style="width: 80px; flex-shrink: 0">
+                <img
+                  src="../assets/img/hediotis.png"
+                  alt="Хедиотис Зальцмана"
+                  class="img-fluid rounded-3"
+                />
+              </div>
+
+              <div class="flex-grow-1">
+                <h5 class="mb-1 fs-4">Хедиотис Зальцмана</h5>
+                <p class="text-secondary fw-bolder">600₽ × 1</p>
+              </div>
+
+              <div class="d-flex gap-4">
+                <div class="btn-group border border-4 border-dark">
+                  <button class="btn text-warning fw-bold">−</button>
+                  <button class="btn text-secondary fw-bold">+</button>
+                </div>
+                <button class="btn btn-danger">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h4 class="fw-bold fs-3">
+              Итого: <span class="text-secondary">1400₽</span>
+            </h4>
+            <button
+              class="btn btn-outline-danger btn-lg rounded-pill px-4 border-4 text-dark fw-bold"
+            >
+              Очистить корзину
+            </button>
+          </div>
+
+          <div class="card border-4 border-dark rounded-5 p-4 shadow-sm fs-4">
+            <h2 class="h3 text-center mb-4">Оформление заказа</h2>
+            <form>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Имя</label>
+                  <input
+                    class="form-control form-control-lg rounded-pill border-3 fw-bolder"
+                    type="text"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Email</label>
+                  <input
+                    class="form-control form-control-lg rounded-pill border-3 fw-bolder"
+                    type="email"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Телефон</label>
+                  <input
+                    class="form-control form-control-lg rounded-pill border-3 fw-bolder"
+                    type="tel"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Адрес доставки</label>
+                  <input
+                    class="form-control form-control-lg rounded-pill border-3 fw-bolder"
+                    type="text"
+                    placeholder="Город, улица, дом"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label fw-bold">Способ доставки</label>
+                  <select
+                    class="form-select form-select-lg rounded-pill border-3 fw-bolder"
+                  >
+                    <option selected>Выберите способ...</option>
+                    <option>Курьером — 3–7 дней</option>
+                    <option>Почтой — 7–14 дней</option>
+                    <option>Самовывоз</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label fw-bold">Комментарий</label>
+                  <textarea
+                    class="form-control rounded-4 fw-bolder border-3 fs-5"
+                    rows="3"
+                    placeholder="Особые пожелания..."
+                  ></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button
+                    class="btn btn-primary btn-lg rounded-pill px-5 w-100 fw-bold"
+                  >
+                    Оформить заказ
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white mt-auto">
       <div class="container">
-        <h1 class="display-5 mb-4">Корзина</h1>
-
-        <div class="card mb-4 shadow-sm">
-          <div class="card-body">
-            <p><strong>Товар:</strong> Название</p>
-            <p>Цена: 1000₽ | Количество: 1</p>
-
-            <div class="btn-group">
-              <button class="btn btn-danger">Удалить</button>
-              <button class="btn btn-secondary">+</button>
-              <button class="btn btn-secondary">−</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-4 shadow-sm">
-          <div class="card-body">
-            <h2 class="h5">Сумма заказа: 1000₽</h2>
-            <button class="btn btn-warning">Очистить корзину</button>
-          </div>
-        </div>
-
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h2 class="h5">Оформление заказа</h2>
-            <div class="mb-3">
-              <label class="form-label">Имя</label>
-              <input class="form-control" type="text" />
-            </div>
-            <button class="btn btn-primary">Заказать</button>
-          </div>
+        <div class="row pt-5 pb-5">
+          <div class="col-4 styled-text">ООО Мерилаб Плантс</div>
+          <div class="col-4 styled-text text-center">2026</div>
+          <a
+            class="col-4 text-white styled-text text-end"
+            href="https://github.com/c0620/DPO_2"
+            >GitHub</a
+          >
         </div>
       </div>
-    </section>
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

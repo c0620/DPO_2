@@ -1,6 +1,4 @@
-// 1. Функции
 @import "../../node_modules/bootstrap/scss/functions";
-// 2. Ваши цвета и настройки
 $custom-colors: (
   "primary": #23472f,
   "secondary": #6fa167,
@@ -11,16 +9,11 @@ $custom-colors: (
   "light": #b4b4b4,
   "dark": #000000,
 );
-$border-radius: 1rem;
-// 3. Переменные Bootstrap
+$border-radius: 5rem;
 @import "../../node_modules/bootstrap/scss/variables";
-// 4. MERGE - ЗДЕСЬ И ТОЛЬКО ЗДЕСЬ!
 $theme-colors: map-merge($theme-colors, $custom-colors);
-// 5. RGB для полупрозрачности (ОЧЕНЬ ВАЖНО!)
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
-// 6. Генерируем CSS-переменные
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
-// 7. Bootstrap целиком
 @import "../../node_modules/bootstrap/scss/bootstrap";

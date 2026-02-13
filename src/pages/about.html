@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>О нас</title>
+    <title>О нас — МЕРИЛАБ</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">МЕРИЛАБ</a>
+        <a class="navbar-brand" href="../../index.html">МЕРИЛАБ</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navAbout">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link" href="../../index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="about.html">О нас</a>
@@ -41,28 +45,225 @@
         </div>
       </div>
     </nav>
+    <main class="flex-fill">
+      <section class="py-5 bg-secondary">
+        <div class="container">
+          <h1 class="display-4 mb-4 text-center">О нас / Частые вопросы</h1>
 
-    <section class="py-5">
+          <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item rounded-5 shadow-sm mb-3">
+              <p class="accordion-header" id="faqHeading1">
+                <button
+                  class="accordion-button collapsed rounded-5 fs-4 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse1"
+                >
+                  Как осуществляется доставка?
+                </button>
+              </p>
+              <div
+                id="faqCollapse1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body fw-bolder fs-5">
+                  Доставка по всей России осуществляется курьерскими службами в
+                  течение 3–7 дней. Возможен самовывоз из пункта выдачи.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded-5 shadow-sm mb-3">
+              <p class="accordion-header" id="faqHeading2">
+                <button
+                  class="accordion-button collapsed rounded-5 fs-4 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse2"
+                >
+                  Как вы гарантируете качество растений?
+                </button>
+              </p>
+              <div
+                id="faqCollapse2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body fw-bolder fs-5">
+                  Все растения проходят строгий лабораторный контроль и
+                  адаптацию перед отправкой. Мы гарантируем живость и
+                  однородность.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded-5 shadow-sm mb-3">
+              <p class="accordion-header" id="faqHeading3">
+                <button
+                  class="accordion-button collapsed rounded-5 fs-4 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse3"
+                >
+                  Какие способы оплаты вы принимаете?
+                </button>
+              </p>
+              <div
+                id="faqCollapse3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body fw-bolder fs-5">
+                  Оплата возможна картой, через Apple Pay / Google Pay и
+                  банковским переводом. Наличные при получении — недоступны.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded-5 shadow-sm mb-3">
+              <p class="accordion-header" id="faqHeading4">
+                <button
+                  class="accordion-button collapsed rounded-5 fs-4 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse4"
+                >
+                  Что делать, если растение пришло повреждённым?
+                </button>
+              </p>
+              <div
+                id="faqCollapse4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body fw-bolder fs-5">
+                  Если растение пришло повреждённым, отправьте нам фото и
+                  описание — мы заменим его или вернём деньги в кратчайшие
+                  сроки.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item rounded-5 shadow-sm">
+              <p class="accordion-header" id="faqHeading5">
+                <button
+                  class="accordion-button collapsed rounded-5 fs-4 fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapse5"
+                >
+                  Возможна ли консультация по уходу?
+                </button>
+              </p>
+              <div
+                id="faqCollapse5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body fw-bolder fs-5">
+                  Да — мы проводим консультации по уходу и подбору растений.
+                  Напишите нам на почту или через форму обратной связи.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h1 class="display-4 mb-4 text-center">Отзывы покупателей</h1>
+
+          <div
+            id="reviewsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card border-4 border-dark rounded-5 mx-auto"
+                  style="max-width: 800px"
+                >
+                  <div class="card-body text-center">
+                    <div class="fs-2 text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="card-title mt-1 fw-bold fs-4">Екатерина</p>
+                    <p class="card-text fw-bolder fs-5">
+                      Отличные растения, всё пришло быстро и в идеальном
+                      состоянии. Обязательно закажу ещё!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card border-4 border-dark rounded-5 mx-auto"
+                  style="max-width: 800px"
+                >
+                  <div class="card-body text-center">
+                    <div class="fs-2 text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="card-title mt-1 fw-bold fs-4">Алексей</p>
+                    <p class="card-text fw-bolder fs-5">
+                      Отличный сервис, растения пришли живыми даже после долгой
+                      дороги. Советую всем!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card border-4 border-dark rounded-5 mx-auto"
+                  style="max-width: 800px"
+                >
+                  <div class="card-body text-center">
+                    <div class="fs-2 text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="card-title mt-1 fw-bold fs-4">Марина</p>
+                    <p class="card-text fw-bolder fs-5">
+                      Хорошее качество растений, но хотелось бы больше сортов. В
+                      целом довольна!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white mt-auto">
       <div class="container">
-        <h1 class="display-5 mb-4">О нас</h1>
-
-        <div class="mb-4">
-          <h2 class="h4">FAQ</h2>
-          <p>Ответы на популярные вопросы.</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="h4">Отзывы покупателей</h2>
-          <p>Отзывы наших клиентов.</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="h4">Доставка и самовывоз</h2>
-          <p>Условия доставки и схема проезда.</p>
+        <div class="row pt-5 pb-5">
+          <div class="col-4 styled-text">ООО Мерилаб Плантс</div>
+          <div class="col-4 styled-text text-center">2026</div>
+          <a
+            class="col-4 text-white styled-text text-end"
+            href="https://github.com/c0620/DPO_2"
+            >GitHub</a
+          >
         </div>
       </div>
-    </section>
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

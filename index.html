@@ -9,10 +9,14 @@
     />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">МЕРИЛАБ</a>
         <button
@@ -47,20 +51,26 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4">МЕРИЛАБ</h1>
-            <p class="lead">
+            <h1 class="display-1">МЕРИЛАБ</h1>
+            <p class="lead fw-bolder fs-3 col-lg-9 col-md-12 mb-5">
               Меристемные водные растения, идеально подходящие для вашего
               аквариума
             </p>
 
             <div class="d-flex flex-column gap-3">
-              <a href="catalog.html" class="btn btn-primary btn-lg"
-                >Почему мы →</a
-              >
-              <a href="catalog.html" class="btn btn-primary btn-lg"
+              <a
+                href="#buy"
+                class="btn btn-white btn-lg rounded-pill border border-4 border-dark fw-bold"
                 >Как купить →</a
               >
-              <a href="catalog.html" class="btn btn-primary btn-lg"
+              <a
+                href="./src/pages/about.html"
+                class="btn btn-white btn-lg rounded-pill border border-4 border-dark fw-bold"
+                >Частые вопросы →</a
+              >
+              <a
+                href="./src/pages/catalog.html"
+                class="btn btn-primary btn-lg rounded-pill fw-bold"
                 >Смотреть каталог →</a
               >
             </div>
@@ -68,7 +78,7 @@
 
           <div class="col-lg-6 text-center mt-4 mt-lg-0">
             <img
-              src="./assets/image 1 (1).png"
+              src="./src/assets/img/plant-main.png"
               class="img-fluid"
               alt="Растение"
             />
@@ -77,28 +87,53 @@
       </div>
     </section>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-secondary">
       <div class="container">
-        <h2 class="h3 mb-4">Почему мы</h2>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <p class="card-text">Здоровые и однородные растения.</p>
+        <h2 id="choose-us" class="display-5 mb-4">Почему мы</h2>
+        <div class="row g-4 fw-bold">
+          <div class="col-3">
+            <div class="card h-100 border-0 shadow rounded-5">
+              <div
+                class="card-body d-flex align-items-center justify-content-center p-5"
+              >
+                <p class="card-text fs-4 text-center mb-0">
+                  Здоровые и однородные растения.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <p class="card-text">Качество, доказанное наукой.</p>
+          <div class="col-3">
+            <div class="card h-100 border-0 shadow rounded-5">
+              <div
+                class="card-body d-flex align-items-center justify-content-center p-5"
+              >
+                <p class="card-text fs-4 text-center mb-0">
+                  Качество, доказанное наукой.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <p class="card-text">Новый подход к выращиванию растений.</p>
+          <div class="col-6">
+            <div
+              class="card h-100 border-0 shadow rounded-5 d-flex align-items-center justify-content-center"
+            >
+              <div class="row g-0">
+                <div
+                  class="col-md-6 d-flex align-items-center justify-content-center"
+                >
+                  <div class="card-body p-5">
+                    <p class="card-text fs-4">
+                      Новый подход к выращиванию растений
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="/src/assets/img/plant.png"
+                    class="img-fluid h-100 w-100"
+                    alt="..."
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -108,25 +143,146 @@
 
     <section class="py-5">
       <div class="container">
-        <h2 class="h3 mb-3">Популярные товары</h2>
-        <div class="card border-0 shadow-sm">
-          <div class="card-body">
-            <p>Список самых покупаемых позиций.</p>
+        <h2 class="display-5 mb-3">Популярные товары</h2>
+        <div class="row g-4 fw-bold">
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="card border-4 border-dark rounded-5 text-center d-flex flex-column h-100 p-3"
+            >
+              <div class="card-body flex-grow-1">
+                <div class="fs-4 lh-1">Альтернантера Рейнека</div>
+                <div class="fs-4">800₽</div>
+                <img
+                  class="card-img-bottom"
+                  src="./src/assets/img/reineca.png"
+                  alt="Альтернантера Рейнека"
+                />
+              </div>
+              <a
+                href="./src/pages/catalog.html"
+                class="btn btn-primary btn-lg rounded-pill fw-bold w-100"
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="card border-4 border-dark rounded-5 text-center d-flex flex-column h-100 p-3"
+            >
+              <div class="card-body flex-grow-1">
+                <div class="fs-4 lh-1">Хедиотис<br />Зальцмана</div>
+                <div class="fs-4">600₽</div>
+                <img
+                  class="card-img-bottom"
+                  src="./src/assets/img/hediotis.png"
+                  alt="Хедиотис"
+                />
+              </div>
+              <a
+                href="./src/pages/catalog.html"
+                class="btn btn-primary btn-lg rounded-pill fw-bold w-100"
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="card border-4 border-dark rounded-5 text-center d-flex flex-column h-100 p-3"
+            >
+              <div class="card-body flex-grow-1">
+                <div class="fs-4 lh-1">Стаурогин<br />ползучий</div>
+                <div class="fs-4">550₽</div>
+                <img
+                  class="card-img-bottom"
+                  src="./src/assets/img/rotala.png"
+                  alt="Стаурогин"
+                />
+              </div>
+              <a
+                href="./src/pages/catalog.html"
+                class="btn btn-primary btn-lg rounded-pill fw-bold w-100 mt-3"
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="card border-4 border-dark rounded-5 text-center d-flex flex-column h-100 p-3"
+            >
+              <div class="card-body flex-grow-1">
+                <div class="fs-4 lh-1">Лобелия Кардинальская</div>
+                <div class="fs-4">650₽</div>
+                <img
+                  class="card-img-bottom"
+                  src="./src/assets/img/lobelia.png"
+                  alt="Лобелия Кардинальская"
+                />
+              </div>
+              <a
+                href="./src/pages/catalog.html"
+                class="btn btn-primary btn-lg rounded-pill fw-bold w-100"
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-secondary" id="buy">
       <div class="container">
-        <h2 class="h3 mb-3">Как заказать</h2>
-        <div class="card border-0 shadow-sm">
-          <div class="card-body">
-            <p>Добавьте товар в корзину и оформите заказ.</p>
+        <h2 class="display-5 mb-3">Как заказать</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-5">
+              <div
+                class="card-body fs-4 fw-bold p-4 d-flex justify-content-center flex-column"
+              >
+                <p>
+                  Добавьте товар в корзину и оформите заказ: возможна доставка и
+                  самовывоз.
+                </p>
+                <p>
+                  Наш магазин находится в Москве по адресу: <br />5-я улица
+                  Соколиной Горы, 22, метро «Соколиная Гора»
+                </p>
+                <p>Мы работаем без выходных с 10 до 21.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-5 overflow-hidden">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=37.742838%2C55.782023&mode=search&oid=1030860143&ol=biz&z=17"
+                width="100%"
+                height="100%"
+                style="border: 0; min-height: 300px"
+                allowfullscreen="true"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-4 styled-text">ООО Мерилаб Плантс</div>
+          <div class="col-4 styled-text text-center">2026</div>
+          <a
+            class="col-4 text-white styled-text text-end"
+            href="https://github.com/c0620/DPO_2"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

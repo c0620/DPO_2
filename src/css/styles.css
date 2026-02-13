@@ -1,3 +1,4 @@
+@import url(./main.css);
 @font-face {
   font-family: "NauryzRedKeds";
   src: url(./assets/fonts/NauryzRedKeds.ttf);
@@ -10,14 +11,18 @@
 
 :root {
   --family-primary: "NauryzRedKeds", sans-serif;
-  /* Основной текст */
   --family-secondary: "Involve", sans-serif;
-  --bs-primary: #9c27b0;
-  --bs-primary-rgb: 156, 39, 176;
-  /* обязательно в формате r,g,b */
-  --bs-primary-bg-subtle: #f3e5f5;
-  --bs-primary-border-subtle: #ce93d8;
-  --bs-primary-text-emphasis: #6a1b9a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-dark) !important;
+  color: var(--bs-white) !important;
+}
+
+.accordion {
+  --bs-accordion-active-bg: var(--bs-dark) !important;
+  --bs-accordion-active-color: var(--bs-white) !important;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .is-width-m {
@@ -28,26 +33,26 @@
   max-width: 300px;
 }
 
-/* БАЗА */
-
 body {
   font-family: var(--family-secondary);
 }
 
-/* Заголовки */
-
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: var(--family-primary);
   color: var(--brand-text);
 }
 
-h1.title {
-  font-size: 4.5rem;
+h5,
+h6 {
+  font-family: var(--family-secondary);
+  font-weight: bold;
+}
+
+.fw-bolder {
+  font-weight: 600 !important;
 }
 
 body,
@@ -56,4 +61,9 @@ body,
 .label,
 .content {
   color: var(--brand-text);
+}
+
+nav,
+.styled-text {
+  font-family: var(--family-primary);
 }

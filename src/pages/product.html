@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Товар</title>
+    <title>Товар — МЕРИЛАБ</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">МЕРИЛАБ</a>
+        <a class="navbar-brand" href="../../index.html">МЕРИЛАБ</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,7 +30,10 @@
         <div class="collapse navbar-collapse" id="navProduct">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link" href="../../index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О нас</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="catalog.html">Каталог</a>
@@ -38,33 +45,111 @@
         </div>
       </div>
     </nav>
+    <main class="flex-fill">
+      <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="link-dark" href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-dark" href="catalog.html">Средний план</a>
+            </li>
+            <li
+              class="breadcrumb-item active text-secondary"
+              aria-current="page"
+            >
+              Альтернантера Рейнека
+            </li>
+          </ol>
+        </nav>
+      </div>
 
-    <section class="py-5">
+      <section class="mt-4">
+        <div class="container">
+          <div class="row align-items-top g-4">
+            <div class="col-md-6">
+              <img
+                src="../assets/img/reineca.png"
+                class="img-fluid rounded-5 border border-4 border-dark w-100"
+                alt="Изображение товара"
+              />
+            </div>
+            <div class="col-md-6">
+              <h1 class="display-5">Альтернантера Рейнека</h1>
+              <p class="fs-3 fw-bold">800₽</p>
+              <p class="mb-4 fw-bolder">
+                Растение представляет собой плавающие на поверхности воды
+                овальные ярко-зелёные листики.
+              </p>
+
+              <a
+                href="cart.html"
+                class="btn btn-primary btn-lg rounded-pill mb-3 w-100"
+                ><i class="fa-solid fa-cart-plus"></i
+              ></a>
+
+              <div class="card border-0 mt-4">
+                <div class="card-body p-0">
+                  <h2 class="h5 fs-4">Характеристики</h2>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-secondary">Параметр</th>
+                        <th scope="col" class="text-secondary">Свойство</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Латинское наименование</th>
+                        <td>Alternanthera reineckii</td>
+                      </tr>
+                      <tr>
+                        <th>Размер в продаже, см</th>
+                        <td>5,0-7,0</td>
+                      </tr>
+                      <tr>
+                        <th>Максимальный размер растения</th>
+                        <td>до 20 см</td>
+                      </tr>
+                      <tr>
+                        <th>Освещенность аквариума</th>
+                        <td>Сильная</td>
+                      </tr>
+                      <tr>
+                        <th>pH</th>
+                        <td>Слабокислая вода: 5-6,9</td>
+                      </tr>
+                      <tr>
+                        <th>gH</th>
+                        <td>Мягкая вода: 5-8</td>
+                      </tr>
+                      <tr>
+                        <th>Температура воды</th>
+                        <td>Теплая: 28-32 C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white mt-auto">
       <div class="container">
-        <h1 class="display-5">Название товара</h1>
-        <p class="lead">Стоимость: 1000₽ | В наличии</p>
-
-        <div class="mb-4">
-          <button class="btn btn-success">Добавить в корзину</button>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="h4">Характеристики</h2>
-          <p>Описание характеристик.</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="h4">Отзывы</h2>
-          <p>Отзывы покупателей.</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="h4">Похожие товары</h2>
-          <p>Список похожих товаров.</p>
+        <div class="row pt-5 pb-5">
+          <div class="col-4 styled-text">ООО Мерилаб Плантс</div>
+          <div class="col-4 styled-text text-center">2026</div>
+          <a
+            class="col-4 text-white styled-text text-end"
+            href="https://github.com/c0620/DPO_2"
+            >GitHub</a
+          >
         </div>
       </div>
-    </section>
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
