@@ -1,12 +1,12 @@
 @import url(./main.css);
 @font-face {
   font-family: "NauryzRedKeds";
-  src: url(./assets/fonts/NauryzRedKeds.ttf);
+  src: url(../assets/fonts/NauryzRedKeds.ttf);
 }
 
 @font-face {
   font-family: "Involve";
-  src: url(./assets/fonts/Involve-SemiBold.ttf);
+  src: url(../assets/fonts/Involve-SemiBold.ttf);
 }
 
 :root {
